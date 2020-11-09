@@ -1,4 +1,4 @@
-{
+a = '''{
   "books": [
     {
       "bookId": 1,
@@ -56,3 +56,10 @@
     }
   ]
 }
+'''
+
+
+
+data = json.loads(a)
+for book in data['books']:
+    print(book['bookId'])
